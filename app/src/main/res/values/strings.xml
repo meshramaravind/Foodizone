@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Foodizone</string>
+    <string name="api_key_here">AIzaSyBcQ_QjrbSMGVCN0HrWk7IQ9wqr3djkwmc</string>
+
+    <string name="password_visible_content_description">Hide password</string>
+    <string name="password_hidden_content_description">Show password</string>
+
+</resources>
