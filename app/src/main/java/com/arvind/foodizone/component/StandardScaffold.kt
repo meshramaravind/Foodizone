@@ -34,7 +34,8 @@ fun StandardScaffold(
         BottomNavItem(
             route = Screen.OrderScreen.route,
             icon = Icons.Outlined.Lock,
-            contentDescription = "Bookmark"
+            contentDescription = "Order",
+            alertCount = 4
         ),
         BottomNavItem(
             route = Screen.ProfileScreen.route,
@@ -52,7 +53,7 @@ fun StandardScaffold(
                     modifier = Modifier.fillMaxWidth(),
                     backgroundColor = MaterialTheme.colors.surface,
                     cutoutShape = CircleShape,
-                    elevation = 5.dp
+                    elevation = 0.dp
                 ) {
                     BottomNavigation(backgroundColor = colorWhite) {
 

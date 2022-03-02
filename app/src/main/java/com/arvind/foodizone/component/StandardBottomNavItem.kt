@@ -107,7 +107,7 @@ fun RowScope.StandardBottomNavItem(
                             .offset(10.dp)
                             .size(15.dp)
                             .clip(CircleShape)
-                            .background(MaterialTheme.colors.primary)
+                            .background(colorRedDark)
                     )
                 }
             }
