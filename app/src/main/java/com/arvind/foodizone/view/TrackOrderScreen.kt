@@ -4,6 +4,7 @@ import android.content.res.Configuration
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -17,8 +18,12 @@ fun TrackOrderScreen() {
     Scaffold(topBar = {
         TopAppBarMap()
     }, backgroundColor = if (isSystemInDarkTheme()) Color.Black else colorWhite,
-        content = {
-            Column(modifier = Modifier.fillMaxSize()) {
+        content = { padding ->
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(padding)
+            ) {
 
             }
         })

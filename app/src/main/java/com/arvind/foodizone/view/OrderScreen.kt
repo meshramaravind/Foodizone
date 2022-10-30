@@ -36,8 +36,14 @@ fun OrderScreen(navController: NavHostController) {
         TopAppBarMyOrders()
     },
         backgroundColor = if (isSystemInDarkTheme()) Color.Black else colorWhite,
-        content = {
-            OrderMainContent()
+        content = { padding ->
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(padding)
+            ) {
+                OrderMainContent()
+            }
         })
 
 }
